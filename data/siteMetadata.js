@@ -13,6 +13,7 @@ const siteMetadata = {
   email: '2yongjundev@gmail.com',
   github: 'https://github.com/uglyduck1104',
   velog: 'https://velog.io/@y_dragonrise',
+  notion: '',
   locale: 'ko-KR',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
