@@ -64,7 +64,7 @@ module.exports = {
             },
             code: {
               color: theme('colors.pink.500'),
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.pink.200'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -96,7 +96,15 @@ module.exports = {
             strong: { color: theme('colors.gray.600') },
             blockquote: {
               color: theme('colors.gray.900'),
-              borderLeftColor: theme('colors.gray.200'),
+              fontStyle: 'normal',
+              borderLeftColor: theme('colors.amber.500'),
+              backgroundColor: theme('colors.yellow.100'),
+            },
+            'blockquote p::before': {
+              content: 'none',
+            },
+            'blockquote p::after': {
+              content: 'none',
             },
           },
         },
@@ -157,7 +165,15 @@ module.exports = {
             },
             blockquote: {
               color: theme('colors.gray.100'),
+              fontStyle: 'normal',
               borderLeftColor: theme('colors.gray.700'),
+              backgroundColor: theme('colors.gray.800'),
+            },
+            'blockquote p::before': {
+              content: 'none',
+            },
+            'blockquote p::after': {
+              content: 'none',
             },
           },
         },
