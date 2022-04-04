@@ -1,5 +1,5 @@
 ---
-title: project-init
+title: 프로젝트 생성
 date: '2022-04-04'
 tags: ['npm']
 draft: false
@@ -27,17 +27,19 @@ authors: ['default']
 ## Node.js 설치
 
 - [공식 사이트 참고](https://nodejs.org/ko/)
-  - 본인의 OS 별로 설치 파일을 다운받으면 됨
-  - ![project-init_1](static/images/project-init_1.png)
-  - LTS
-    - 짝수 형태
-    - 안정적이고 신뢰도가 높음
-    - `서버 운영 추천`
-      > Node.js로 서버 구성 시, 본인 환경에 따라 신중하게 선택해야 함
-  - Current Version
-    - 주로 홀수 형태
-    - 최신 기능을 가지고 있음
-    - `개발 환경 구축 추천`
+- 본인의 OS 별로 설치 파일을 다운받으면 됨
+
+![project-init_1](/static/images/project-init_1.png)
+
+- LTS
+  - 짝수 형태
+  - 안정적이고 신뢰도가 높음
+  - `서버 운영 추천`
+    > Node.js로 서버 구성 시, 본인 환경에 따라 신중하게 선택해야 함
+- Current Version
+  - 주로 홀수 형태
+  - 최신 기능을 가지고 있음
+  - `개발 환경 구축 추천`
 
 ## Node 터미널 도구 실행(REPL)
 
