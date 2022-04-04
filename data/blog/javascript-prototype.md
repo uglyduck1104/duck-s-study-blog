@@ -4,9 +4,7 @@ date: '2022-04-03'
 tags: ['javascript']
 draft: false
 summary: 프로토타입 기반 객체지향 프로그래밍 언어
-images: []
 layout: PostSimple
-canonicalUrl:
 authors: ['default']
 ---
 
