@@ -32,7 +32,7 @@ authors: ['default']
 - npm install 명령어 사용
 
 ```shell
-$ npm install react
+npm install react
 ```
 
 ```javascript
@@ -86,8 +86,8 @@ $ npm install react
 ### 버전 범위 확인하기
 
 ```shell
-$ npm view <keyword> versions # 확인하고 싶은 dependency의 모든 버전 출력
-$ cat node_modules/<keyword>/package.json # 설치된 dependency의 버전 확인
+npm view <keyword> versions # 확인하고 싶은 dependency의 모든 버전 출력
+cat node_modules/<keyword>/package.json # 설치된 dependency의 버전 확인
 ```
 
 - npm이 어떤식으로 버전 관리하는지 확인

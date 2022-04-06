@@ -1,0 +1,97 @@
+---
+title: Next.js
+date: '2022-04-05'
+tags: ['NextJS']
+draft: false
+summary: Next.js는 Vercel사에서 만든 오픈 소스 React framework으로써, 개발자가 더 효율적으로 쉽게 SSG(Static Generation)와 SSR(Server-side Rendering) 웹사이트를 구현하는데 도움을 줌
+layout: PostSimple
+authors: ['default']
+---
+
+<div className="w-3/12 my-0 mx-auto">![nextjs_logo](/static/images/nextjs_logo.png)</div>
+
+# Next.js
+
+> Vercel사에서 만든 오픈 소스 React framework으로써, 개발자가 더 효율적으로 쉽게 SSG(Static Generation)와 SSR(Server-side Rendering) 웹사이트를 구현하는데 도움을 줌
+
+<div className="w-6/12">![nextjs_1](/static/images/nextjs_1.png)</div>
+
+## 사용 이점
+
+- 사용자에게 인터페이스를 더 빠르고 쉽게 제공할 수 있음
+- Client-side 정적인 웹페이지 환경에 최적화된 성능을 제공함
+- 흔히 아는 Netflix, Uber, Starbucks와 같은 기업에서 많이 사용하고 있음
+- Server-side 기능을 제공해서 SEO(Search Engine Optimization) Issue에 효과적으로 대응할 수 있음
+- 개발자의 개발 경험을 쾌적하게 해줌
+  - CRA였다면... react-dom 다운 받고, router 설계하고, component import... 등등 🤯
+  - 이런 모든 것들을 next.js로 프로젝트를 생성하면 이미 다 되어 있음
+
+## 핵심 기능 미리 보기
+
+### Pages
+
+- `.js`, `.jsx`, `.ts`, `.tsx` 파일은 `pages` 경로에 위치함
+- 각 파일명에 따른 접근이 가능함
+  ```javascript
+  function About() {
+    return <div>About</div>
+  }
+
+  export default About
+  ```
+  - pages/about.js 파일을 생성하면 `/about`으로 접근할 수 있음
+
+### Dynamic Routes 지원
+
+- `pages/posts/[id].js`를 Pattern일 경우에 `posts/1`, `posts/2` 등 접근이 가능하고 REST API 설계에 효율적임
+
+### Pre-rendering
+
+- Next.js는 모든 페이지에서 pre-renders 방식을 지원함
+  - 자바스크립트가 비활성화되거나, 원활하지 못한 네트워크 환경의 사용자에게 더 나은 사용자 경험을 제공함
+
+#### Pre-rendering의 형태
+
+- SSG
+  - HTML은 빌드 시 생성
+  - 사용자의 요청보다 먼저 미리 렌더링할 수 있는 페이지에 적합
+  - Client-side rendering을 사용하여 추가 데이터를 가져올 수 있음
+- SSR
+  - HTML이 매 요청마다 생성됨
+  - SSG보다는 성능이 느리긴 하지만, SEO Issue에 강점을 보임
+
+> 개발 환경에 따라 선택이 가능하고 Next.js에서는 CDN 캐싱과 같은 이유로 정적으로 생성된 페이지는 SSG를 권장함
+
+이외에도 `Data fetching`, `Fast Refresh`, `Image Optimization`, `Dynamic import` 등을 제공함
+
+## 프로젝트 생성
+
+- React.js처럼 `create-next-app`을 이용해서 생성함
+
+```shell
+npx create-next-app@latest
+# or
+yarn create next-app
+# or
+pnpm create next-app
+```
+
+- TypeScript도 지원하기 때문에 `--typescript` flag를 붙여서 생성할 수 있음
+
+```shell
+npx create-next-app@latest --typescript
+# or
+yarn create next-app --typescript
+# or
+pnpm create next-app -- --typescript
+```
+
+## 프로젝트 실행
+
+- `npm run dev` 또는 `yarn dev`로 실행 가능
+  - `http://localhost:3000`에서 확인 가능
+- `pages/index.js`를 수정해 `/` 홈 화면의 결과를 확인할 수 있음
+
+> **Referenced**
+
+- https://nextjs.org/docs

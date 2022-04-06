@@ -56,9 +56,9 @@ authors: ['default']
 # 프로젝트 생성
 
 ```shell
-$ mkdir sample #sample 폴더 생성
-$ cd sample # sample 폴더 이동
-$ sample npm init # sample project init
+mkdir sample #sample 폴더 생성
+cd sample # sample 폴더 이동
+sample npm init # sample project init
 ```
 
 ```shell
