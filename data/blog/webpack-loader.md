@@ -1,6 +1,6 @@
 ---
 title: 로더
-date: '2022-04-06'
+date: '2022-04-07'
 tags: ['Webpack']
 draft: false
 summary:
@@ -36,20 +36,18 @@ module.exports = function myWebpackLoader(content) {
 #### `webpack.config.js`
 
 ```javascript
-const path = require('path');
+const path = require('path')
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: [
-          path.resolve('./my-webpack-loader.js'),
-        ]
-      }
-    ]
-  }
-  ...
+        use: [path.resolve('./my-webpack-loader.js')],
+      },
+    ],
+  },
+  // ...
 }
 ```
 
@@ -131,18 +129,16 @@ $ npm install css-loader
 
 ```javascript
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'css-loader'
-        ]
-      }
-    ]
-  }
-  ...
+        use: ['css-loader'],
+      },
+    ],
+  },
+  // ...
 }
 ```
 
@@ -170,19 +166,16 @@ $ npm install style-loader
 
 ```javascript
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ]
-  }
-  ...
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  // ...
 }
 ```
 
@@ -215,24 +208,24 @@ $ npm run build
 
 #### file-loader 로더 적용하기
 
-````shell
+```shell
 $ npm install file-loader
+```
+
 ```javascript
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
         test: /\.png$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
-  }
-  ...
+        use: ['file-loader'],
+      },
+    ],
+  },
+  // ...
 }
-````
+```
 
 - 파일 형태는 png이므로 새로운 파일 규칙을 지정하고, 방금 설치한 'file-loader'를 적용
 - 설정을 수정했다면, `dist/main` 폴더에 가서 `bg.png` 파일을 확인
@@ -246,7 +239,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
@@ -254,12 +247,12 @@ module.exports = {
         loader: 'file-loader',
         options: {
           publicPath: './dist/',
-          name: '[name].[ext]?[hash]'
+          name: '[name].[ext]?[hash]',
         },
-      }
-    ]
-  }
-  ...
+      },
+    ],
+  },
+  // ...
 }
 ```
 
@@ -288,21 +281,21 @@ $ npm install -D url-loader
 
 ```javascript
 module.exports = {
-  ...
+  // ...
   module: {
     rules: [
       {
-        test:/\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         loader: 'url-loader',
         options: {
           publicPath: './dist/',
           name: '[name].[ext]?[hash]',
           limit: 20000, // 20kb
-        }
-      }
-    ]
-  }
-  ...
+        },
+      },
+    ],
+  },
+  // ...
 }
 ```
 
