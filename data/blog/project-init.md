@@ -119,7 +119,7 @@ npm ERR! Test failed. See adove for more details.
 
 - package.json에 "script"에 추가
 
-```json
+```json lines
 {
   "scripts": {
     "build": "echo \"여기에 빌드 스크립트를 추가합니다\""

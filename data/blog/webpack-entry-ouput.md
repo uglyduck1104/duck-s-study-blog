@@ -27,9 +27,9 @@ $ npm install -D webpack webpack-cli // devDependencies에 설치
 
 ### `package.json`
 
-```json
+```json lines
 {
-  ...
+  //...
   "dependencies": {
     "react": "^18.0.0"
   },
@@ -104,13 +104,13 @@ module.exports = {
 
 - webpack을 실행하기 위한 npm build script 추가
 
-```javascript
+```json lines
 {
-...
+  // ...
   "scripts": {
     "build": "webpack"
   }
-...
+  // ...
 }
 ```
 
