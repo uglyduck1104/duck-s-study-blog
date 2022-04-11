@@ -3,7 +3,7 @@ title: Next.js 주요 기능 상세 보기
 date: '2022-04-06'
 tags: ['NextJS', 'Clone-Coding']
 draft: false
-summary: NextJS Framework Features Overview
+summary: Next.js 프로젝트 생성과 주요 기능 상세 보기
 layout: PostSimple
 authors: ['default']
 ---
@@ -77,11 +77,11 @@ export default function Home() {
   ### `CRA(create-react-app)`
   - client-side render 방식
     - react.js가 만들어주는 javascript 코드
-      <p>![noscript](/static/images/nextjs_3.png)</p>- div id root 일 뿐 유저가 보는 HTML 소스코드 안에
-      들어있지 않음 - 브라우저가 자바스크립트, react.js를 fetch한 후에 client-side의 자바스크립트가 모든
-      UI를 만듦 - 자바스크립트가 비활성화 되어 있을 때에는 noscript의 내용을 보여줌(흔한 상황은 아님)
-      - 하지만 네트워크 환경이 느린 사용자는 어떤 UI를 보지 못하고 로드가 완료되기 전까지 흰 화면만 보게되는
-      상황 발생
+      <p>![noscript](/static/images/nextjs_3.png)</p>- div id root 일 뿐 유저가 보는 HTML 소스코드
+      안에 들어있지 않음 - 브라우저가 자바스크립트, react.js를 fetch한 후에 client-side의
+      자바스크립트가 모든 UI를 만듦 - 자바스크립트가 비활성화 되어 있을 때에는 noscript의 내용을
+      보여줌(흔한 상황은 아님) - 하지만 네트워크 환경이 느린 사용자는 어떤 UI를 보지 못하고 로드가
+      완료되기 전까지 흰 화면만 보게되는 상황 발생
   ### `Next.js`
   - 네트워크 환경이 느리거나, 자바스크립트가 비활성화되어 있어도 어떠한 형태의 HTML을 볼 수는 있음
     - 유저가 페이지를 요청하면 일반 client-side rendering 방식과는 다르게 미리 HTML을 만들어 줌
