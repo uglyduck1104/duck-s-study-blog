@@ -3,7 +3,7 @@ title: 외부 패키지 관리
 date: '2022-04-04'
 tags: ['npm']
 draft: false
-summary: external package setup
+summary: 외부 패키지를 관리하는 방법, 버전 살펴보기
 layout: PostSimple
 authors: ['default']
 ---
