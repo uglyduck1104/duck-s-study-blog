@@ -219,7 +219,7 @@ module.exports = {
 }
 ```
 
-- custom preset js 파일을 지정해 줌
+- custom preset js 경로로 파일을 지정해 줌
 - 보다 효율적으로 preset을 관리할 수 있음
 
 > **Referenced**
