@@ -3,7 +3,7 @@ title: 플러그인
 date: '2022-04-08'
 tags: ['Webpack']
 draft: false
-summary:
+summary: webpack의 플러그인 및 자주 쓰이는 플러그인 살펴보기
 layout: PostSimple
 authors: ['default']
 ---
