@@ -75,10 +75,9 @@ $ npm install -D eslint-config-prettier
 
 ```javascript
 {
-  extends: [
-    "eslint:recommended",
-    "eslint-config-prettier"
-  ]
+  module.exports = {
+    extends: ['eslint:recommended', 'eslint-config-prettier'],
+  }
 }
 ```
 
@@ -141,10 +140,9 @@ $ npx eslint app.js --fix
 
 ```javascript
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended"
-  ]
+  modules.export = {
+    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  }
 }
 ```
 
