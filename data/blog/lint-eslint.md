@@ -3,7 +3,7 @@ title: ESLint
 date: '2022-04-13'
 tags: ['Lint']
 draft: false
-summary: 린트의 배경과 사용방법
+summary: 린트의 등장 배경과 구성 방법
 layout: PostSimple
 authors: ['default']
 ---
