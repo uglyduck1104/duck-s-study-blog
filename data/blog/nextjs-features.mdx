@@ -1,20 +1,22 @@
 ---
-title: Next.js 주요 기능 상세 보기
+title: NextJS Basic Features
 date: '2022-04-06'
 tags: ['NextJS', 'Clone-Coding']
 draft: false
-summary: Next.js 프로젝트 생성과 주요 기능 상세 보기
+summary: NextJS 프로젝트 생성과 주요 기능 상세 보기
 layout: PostSimple
 authors: ['default']
 ---
 
-# 프로젝트 생성
+# NextJS Basic
+
+## 프로젝트 생성
 
 ```shell
 $ npx create-next-app@latest
 ```
 
-## `package.json`
+`package.json`
 
 ```json
 {
@@ -42,7 +44,7 @@ $ npx create-next-app@latest
 - 정상적으로 작동하는지 `npm run dev`로 실행
 - 웹 브라우저 상의 localhost:3000로 접근해서 index.js 페이지가 뜨는지 확인
 
-## `index.js`
+`index.js`
 
 ```javascript
 export default function Home() {
@@ -56,9 +58,9 @@ export default function Home() {
     - `http://localhost:3000/about` 로 접근
 - '/' -> root path는 반드시 `index.js` 이름을 가져야 함
 
-# Next.js의 주요 특징 명세
+## Next.js의 주요 특징 명세
 
-## Pages
+### Pages
 
 - root path('/')를 제외한 나머지 path는 `파일명`을 따라감
   - component 이름은 중요하지 않음
@@ -71,18 +73,18 @@ export default function Home() {
   - useEffect, useState와 같은 method를 사용할 경우에는 react를 import 해야 함
     - 파일 포맷이 `jsx`지 않아도 react import를 기본적으로 지원함
 
-## Pre-rendering
+### Pre-rendering
 
 - 앱에 있는 페이지들이 미리 렌더링 되어 있음
-  ### `CRA(create-react-app)`
+  #### `CRA(create-react-app)`
   - client-side render 방식
     - react.js가 만들어주는 javascript 코드
-      <p>![noscript](/static/images/nextjs_3.png)</p>- div id root 일 뿐 유저가 보는 HTML 소스코드
-      안에 들어있지 않음 - 브라우저가 자바스크립트, react.js를 fetch한 후에 client-side의
-      자바스크립트가 모든 UI를 만듦 - 자바스크립트가 비활성화 되어 있을 때에는 noscript의 내용을
-      보여줌(흔한 상황은 아님) - 하지만 네트워크 환경이 느린 사용자는 어떤 UI를 보지 못하고 로드가
-      완료되기 전까지 흰 화면만 보게되는 상황 발생
-  ### `Next.js`
+      <p>![noscript](/static/images/nextjs_3.png)</p>
+    - div id root 일 뿐 유저가 보는 HTML 소스코드 안에 들어있지 않음
+    - 브라우저가 자바스크립트, react.js를 fetch한 후에 client-side의 자바스크립트가 모든 UI를 만듦
+    - 자바스크립트가 비활성화 되어 있을 때에는 noscript의 내용을 보여줌(흔한 상황은 아님)
+    - 하지만 네트워크 환경이 느린 사용자는 어떤 UI를 보지 못하고 로드가 완료되기 전까지 흰 화면만 보게되는 상황 발생
+  #### `Next.js`
   - 네트워크 환경이 느리거나, 자바스크립트가 비활성화되어 있어도 어떠한 형태의 HTML을 볼 수는 있음
     - 유저가 페이지를 요청하면 일반 client-side rendering 방식과는 다르게 미리 HTML을 만들어 줌
     - SEO 이슈에 좋음
@@ -91,9 +93,9 @@ export default function Home() {
   - react.js를 프론트엔드 안에서 실행하는 hydration 방식
     - react.js를 백엔드에서 동작시켜서 페이지를 미리 만듦
 
-## Routing
+### Routing
 
-### 잘못된 Routing 예시
+#### 잘못된 Routing 예시
 
 ```javascript
 <nav>
@@ -104,12 +106,11 @@ export default function Home() {
 
 - react.js와 마찬가지로 anchor tag href 속성을 사용하지 말아야 함
 
-### 올바른 Routing 예시
+#### 올바른 Routing 예시
 
 ```javascript
-import Link from "next/link"; // Next Link import 해야 함
-...
-<nav>
+import Link from 'next/link' // Next Link import 해야 함
+;<nav>
   <Link href="/">
     <a>Home</a>
   </Link>
@@ -122,27 +123,30 @@ import Link from "next/link"; // Next Link import 해야 함
 - Link component로 a tag를 감싸줘야 함
 - a tag에서는 href 제외한 나머지 속성을 적용할 수 있음
 
-#### `useRouter` hook 지원
+### `useRouter` hook 지원
 
 ```javascript
 import { useRouter } from 'next/router'
 ```
 
 - router를 설치하지 않아도, hook을 통해 router의 속성을 응용할 수 있음
-  - ```javascript
-    <Link href="/">
-      <a style={{ color: router.pathname === '/' ? 'red' : 'blue' }}>Home</a>
-      // router의 pathname 속성을 이용해 a tag의 style을 변경
-    </Link>
-    ```
 
-## CSS Modules
+```javascript
+import Link from 'next/link'
 
-### `.module.css` 패턴
+;<Link href="/">
+  <a style={{ color: router.pathname === '/' ? 'red' : 'blue' }}>Home</a>
+  // router의 pathname 속성을 이용해 a tag의 style을 변경
+</Link>
+```
+
+### CSS Modules
+
+#### `.module.css` 패턴
 
 - [component_name].module.css 패턴 이용해서 독립된 style 적용
 
-#### `component_name.modules.css`
+`component_name.modules.css`
 
 ```css
 .nav {
@@ -152,12 +156,13 @@ import { useRouter } from 'next/router'
 }
 ```
 
-#### `component_name.js`
+`component_name.js`
 
 ```javascript
-import styles from "./component_name.module.css";
-...
-<nav className={styles.nav}>
+import styles from './component_name.module.css'
+import Link from 'next/link'
+
+;<nav className={styles.nav}>
   <Link href="/">
     <a>Home</a>
   </Link>
@@ -176,18 +181,17 @@ import styles from "./component_name.module.css";
   - 소스 파일 관리가 용이하지 못함
   - 해당 module.css의 class명을 찾아야하는 번거로움 발생
 
-## Styles JSX
+### Styles JSX
 
 - Next.js 어플리케이션에서 style을 추가하는 또 다른 방법
 - 일반 HTML 태그인 `<style>`을 이용한 NextJS 고유의 방식
 
 ```javascript
-...
 <style jsx>{`
   nav {
     background-color: tomato;
   }
-  a{
+  a {
     text-decoration: none;
   }
 `}</style>
@@ -200,13 +204,13 @@ import styles from "./component_name.module.css";
 - `global` props를 추가해서 전역적인 style 적용 가능
   - NextJS는 page-based concept이라서 페이지별로 추가해야 하는 단점
 
-## Custom app
+### Custom app
 
 - 공통 컴포넌트(ex. navbar, footer)를 위해 app component를 생성
 - `_app.js` 파일을 생성하여 `pages/_app.js` 경로에 위치
 - `index.js`를 렌더링하기 전에 `_app.js` 먼저 확인함(blueprint)
 
-### `_app.js`
+`_app.js`
 
 ```javascript
 export default function App({ Component, pageProps }) {
