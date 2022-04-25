@@ -202,7 +202,6 @@ const Container = () => (
 ReactDOM.render(<Container />, root)
 ```
 
-- ES6 문법의 함수 리터럴 방식으로 컴포넌트화 시켜줌
 - Title, Button 컴포넌트를 감싸고 있는 Container 또한 컴포넌트로 관리
 - 컴포넌트로 선언하는 변수는 반드시 앞글자가 대문자로 시작해야 함
   - 소문자로 선언하는 변수는 html tag로 인식함
