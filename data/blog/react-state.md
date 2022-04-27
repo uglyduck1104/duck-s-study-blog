@@ -178,6 +178,8 @@ ReactDOM.render(<App />, root)
 - flipped button을 눌렀을 때 호출되는 함수
 - 시(hours)와 분(minutes) State의 현재 값을 반대 값(!)으로 뒤집고 flipped state를 갱신하여 리렌더링
 
+> modifier 함수(setter function)를 이용해서 컴포넌트의 state 변경 시, 컴포넌트는 새로운 값을 가지고 다시 렌더링됨(컴포넌트 재생성)
+
 > **Referenced**
 
 - [Nomad coding](https://nomadcoders.co/react-for-beginners)

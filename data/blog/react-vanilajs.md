@@ -60,7 +60,7 @@ authors: ['default']
 </html>
 ```
 
-- React library를 사용하기 위해서 react와 react-dom을 script tag로 import함
+- React library를 사용하기 위해서 react와 react-dom을 unpkg로 npm에 있는 package를 import함
 - dev tool console 탭에 `React`를 입력하여 실제 React code가 정상적으로 로드되었는지 확인
 
 ### React.createElement()로 Element 생성하는 방식
