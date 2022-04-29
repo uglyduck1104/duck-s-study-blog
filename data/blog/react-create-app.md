@@ -3,7 +3,7 @@ title: Create React App
 date: '2022-04-27'
 tags: ['react', 'Clone-Coding']
 draft: false
-summary: 예제로 알아보는 CRA
+summary: 개발 서버에 접근하거나 변동사항에 대해 새로고침을 해주거나 애플리케이션 안에 CSS 파일을 로드할 수 있게 하는 등 별도로 설정을 하지 않아도 편의성을 위한 설정이 되어있음
 layout: PostSimple
 authors: ['default']
 ---
