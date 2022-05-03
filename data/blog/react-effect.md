@@ -1,7 +1,7 @@
 ---
 title: React Effect
 date: '2022-04-29'
-tags: ['react', 'Clone-Coding']
+tags: ['react']
 draft: false
 summary: 생명주기 componentDidMount, componentDidUpdate와 같은 방식으로 수행
 layout: PostSimple

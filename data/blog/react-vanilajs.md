@@ -1,7 +1,7 @@
 ---
 title: React JSX
 date: '2022-04-24'
-tags: ['react', 'Clone-Coding']
+tags: ['react']
 draft: false
 summary: VanillaJS, React 비교하면서 알아보는 JSX
 layout: PostSimple

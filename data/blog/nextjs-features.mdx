@@ -1,7 +1,7 @@
 ---
 title: NextJS Basic Features
 date: '2022-04-06'
-tags: ['NextJS', 'Clone-Coding']
+tags: ['NextJS']
 draft: false
 summary: NextJS 프로젝트 생성과 주요 기능 상세 보기
 layout: PostSimple
@@ -133,7 +133,6 @@ import { useRouter } from 'next/router'
 
 ```javascript
 import Link from 'next/link'
-
 ;<Link href="/">
   <a style={{ color: router.pathname === '/' ? 'red' : 'blue' }}>Home</a>
   // router의 pathname 속성을 이용해 a tag의 style을 변경
@@ -161,7 +160,6 @@ import Link from 'next/link'
 ```javascript
 import styles from './component_name.module.css'
 import Link from 'next/link'
-
 ;<nav className={styles.nav}>
   <Link href="/">
     <a>Home</a>
