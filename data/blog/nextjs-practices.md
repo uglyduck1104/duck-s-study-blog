@@ -1,7 +1,7 @@
 ---
 title: NextJS Practice Project
 date: '2022-04-17'
-tags: ['NextJS', 'Clone-Coding']
+tags: ['NextJS']
 draft: false
 summary: 프로젝트로 예제 알아보는 NextJS 기능
 layout: PostSimple

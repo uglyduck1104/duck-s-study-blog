@@ -1,7 +1,7 @@
 ---
 title: React State
 date: '2022-04-25'
-tags: ['react', 'Clone-Coding']
+tags: ['react']
 draft: false
 summary: 예제로 알아보는 React State
 layout: PostSimple
