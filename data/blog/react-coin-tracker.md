@@ -3,12 +3,12 @@ title: React Simple Coin Tracker Example
 date: '2022-05-04'
 tags: ['react']
 draft: false
-summary: ToDos 예제로 알아보는 Effect 개념
+summary: Coin tracker 예제로 알아보는 Effect 개념
 layout: PostSimple
 authors: ['default']
 ---
 
-# Simple Coin Tracker
+# Simple Coin Tracker App
 
 - 페이지나 앱을 들어왔을 때 API를 호출 상태에 따른 로딩 메시지를 노출하고 coin 정보의 목록을 출력
 
