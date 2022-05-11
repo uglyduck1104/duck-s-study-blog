@@ -120,7 +120,7 @@ module.exports = {
 
 ```javascript
 console.log()
-;(function () {})()
+(function () {})()
 ```
 
 - 세미콜론(;)이 여러개인 경우, 오류 사항은 아니지만 `no-extra-semi` rule을 추가하면 error로 출력할 수 있음
