@@ -102,7 +102,7 @@ String(true) // -> "true"
 #### Object.prototpe.toString 메서드 호출
 
 ```javascript
-;(1).toString() // -> "1"
+(1).toString() // -> "1"
 NaN.toString() // -> "NaN"
 true.toString() // -> "true"
 false.toString() // -> "false"
@@ -135,8 +135,8 @@ parseFloat('10.53') // -> 10.53
 #### `+` 단항 산술 연산자 이용
 
 ```javascript
-;+'0' + // -> 0
-  true // true
++'0' // -> 0
++ true // true
 ```
 
 #### `+` 산술 연산자를 이용
