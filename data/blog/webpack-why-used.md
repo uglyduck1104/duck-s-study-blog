@@ -58,7 +58,7 @@ console.log(sum(1, 2))
 - 즉시 실행 함수 표현(IIFE, Immediately Invoked Function Expression)을 말함
 
 ```javascript
-;(function () {
+(function () {
   statements
 })()
 ```
@@ -76,7 +76,7 @@ console.log(sum(1, 2))
 ```javascript
 var math = math || {}
 
-;(function () {
+(function () {
   function sum(a, b) {
     return a + b
   }
