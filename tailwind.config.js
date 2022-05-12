@@ -166,8 +166,8 @@ module.exports = {
             blockquote: {
               color: theme('colors.gray.100'),
               fontStyle: 'normal',
-              borderLeftColor: theme('colors.gray.700'),
-              backgroundColor: theme('colors.gray.800'),
+              borderLeftColor: theme('colors.gray.600'),
+              backgroundColor: theme('colors.gray.700'),
             },
             'blockquote p::before': {
               content: 'none',
