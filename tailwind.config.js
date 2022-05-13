@@ -99,6 +99,10 @@ module.exports = {
               fontStyle: 'normal',
               borderLeftColor: theme('colors.amber.500'),
               backgroundColor: theme('colors.yellow.100'),
+              p: {
+                paddingBottom: '1em',
+                paddingTop: '1em',
+              },
             },
             'blockquote p::before': {
               content: 'none',
