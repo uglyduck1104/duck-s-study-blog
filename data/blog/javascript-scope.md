@@ -20,8 +20,8 @@ authors: ['default']
 var x = 'global';
 
 function foo() {
-	var x = 'local';
-	console.log(x); // (1)
+  var x = 'local';
+  console.log(x); // (1)
 }
 
 foo();
@@ -39,7 +39,7 @@ console.log(x); // (2)
 - 스코프를 사용하지 않았다면, 이름이 같은 변수끼리 충돌을 일으킬 수 있음
 
 > `렉시컬 환경` : *“코드가 어디서 실행되며 주변에 어떤 코드가 있는지”*\
-코드의 문맥은 `렉시컬 환경`으로 이뤄지며 이를 구현한 것은 `실행 컨텍스트`라 함\
+> 코드의 문맥은 `렉시컬 환경`으로 이뤄지며 이를 구현한 것은 `실행 컨텍스트`라 함\
 `모든 코드`는 실행 컨텍스트에서 `평가`되고 `실행`됨
 
 ## 스코프의 종류
@@ -70,6 +70,7 @@ console.log(x); // (2)
 <img alt="js_scope3" src="/static/images/js_scope3.png" width="400"/>
 
 > 최상위 스코프는 전역 스코프
+
 - 모든 스코프는 `하나의 계층적 구조`로 연결되는 것을 `스코프 체인`이라고 함
 - 변수를 참조할 때 자바스크립트 엔진은 스코프 체인을 통해 변수를 참조하는 코드의 스코프에서 시작하여 상위 스코프 방향으로 이동하며 선언된 변수를 검색함
 
@@ -82,15 +83,16 @@ console.log(x); // (2)
 ```javascript
 // 전역 함수
 function foo() {
-	console.log('global function foo');
+  console.log('global function foo');
 }
 
 function bar() {
-	// 중첩 함수
-	function foo() {
-		console.log('local function foo');
-	}
-	foo(); // (1)
+  // 중첩 함수
+  function foo() {
+    console.log('local function foo');
+  }
+
+  foo(); // (1)
 }
 
 bar();
@@ -99,20 +101,20 @@ bar();
 - (1)에서 foo 함수를 호출하면 자바스크립트 엔진은 함수를 호출하기 위해 먼저 함수를 가리키는 식별자 foo를 검색함
 
 > 함수도 `식별자`에 할당되기 때문에 변수와 동일하게 `스코프 소유`\
-따라서 `식별자를 검색하는 규칙`이라고 정의할 수 있음
+> 따라서 `식별자를 검색하는 규칙`이라고 정의할 수 있음
 
 ## 렉시컬 스코프
 
 ```javascript
 var x = 1;
 
-function foo(){
-	var x = 10;
-	bar();
+function foo() {
+  var x = 10;
+  bar();
 }
 
-function bar(){
-	console.log(x);
+function bar() {
+  console.log(x);
 }
 
 foo(); // 1
