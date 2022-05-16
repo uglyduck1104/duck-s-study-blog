@@ -3,7 +3,7 @@ title: let, const 키워드와 블록 레벨 스코프
 date: '2022-05-16'
 tags: ['javascript']
 draft: false
-summary: var 키워드로 선언한 변수의 문제점, let, const 키워드와 비교 
+summary: var 키워드로 선언한 변수의 문제점, let, const 키워드와 비교
 layout: PostSimple
 authors: ['default']
 ---
@@ -67,8 +67,8 @@ let bar = 456; // SyntaxError: Identifier 'bar' has already been declared
 ```javascript
 let foo = 1; // 전역 변수
 {
-	let foo = 2; // 지역 변수
-	let bar = 3; // 지역 변수
+  let foo = 2; // 지역 변수
+  let bar = 3; // 지역 변수
 }
 
 console.log(foo); // 1
@@ -124,7 +124,7 @@ console.log(foo); // 1
 - let 키워드로 선언했다고해서 변수 호이스팅이 발생하지 않는 것은 아님
 
 > ES6에서 도입된 let, const를 포함해서 모든 선언(var, let, const, function, function*, class 등)을 호이스팅함
-단, ES6에서 도입된 `let`, `const`, `class`를 사용한 선언문은 `호이스팅이 발생하지 않는 것처럼` 동작
+> 단, ES6에서 도입된 `let`, `const`, `class`를 사용한 선언문은 `호이스팅이 발생하지 않는 것처럼` 동작
 
 ## const 키워드
 
