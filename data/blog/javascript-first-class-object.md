@@ -217,4 +217,4 @@ console.log(obj.hasOwnProperty('__proto__')); // false
 
 > **Referenced**
 
-- 이응모, 『모던 자바스크립트 Deep Dive』, 위키북스(2022.4.25), 234 ~ 248p
+- 이응모, 『모던 자바스크립트 Deep Dive』, 위키북스(2022.4.25), 249 ~ 258p
