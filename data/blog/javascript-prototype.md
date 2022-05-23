@@ -211,7 +211,7 @@ console.log(Function.prototype.__proto__ === Object.prototype) // ⑤ true
 - 생성자 함수 Person은 프로토타입 객체 Person.prototype와 prototype 프로퍼티에 의해 바인딩됨
 - 생성자 함수 Person에 의해 생성된 모든 객체는 프로토타입 체인에 의해 부모객체인 Person.prototype의 메소드를 사용할 수 있게 됨
 
-# 원시 타입이 확장
+# 원시 타입의 확장
 
 - 원시 타입을 제외한 모든 것은 객체임
 - 아래 예제에서는 원시 타입인 문자열이 객체와 유사하게 동작함
