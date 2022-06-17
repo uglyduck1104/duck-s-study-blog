@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# DOM
+# DOM - 노드 탐색과 노드 정보 취득
 
 - HTML 문서의 `계층적 구조`와 `정보`를 표현하며 이를 제어할 수 있는 `API`, `프로퍼티`와 `메서드`를 제공하는 `트리 자료구조`
 
