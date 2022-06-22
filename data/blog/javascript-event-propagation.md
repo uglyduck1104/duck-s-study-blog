@@ -408,4 +408,4 @@ $button.dispatchEvent(customEvent);
 
 > **Referenced**
 
-- 이응모, 『모던 자바스크립트 Deep Dive』, 위키북스(2022.4.25), 779 ~ 800p
+- 이응모, 『모던 자바스크립트 Deep Dive』, 위키북스(2022.4.25), 779 ~ 799p
