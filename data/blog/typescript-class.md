@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# 클래스 & 인터페이스
+# 클래스
 
 ## 클래스 및 인스턴스
 
