@@ -53,15 +53,15 @@ const mergedObj = merge({ name: 'Max' }, { age: 30 })
 ## 제약 조건 작업
 
 ```tsx
-function merge<T extends object, U exteds object>(objA: T, objB: U) {
-	return Object.assing(objA, objB);
+function merge<T extends object, U extends object>(objA: T, objB: U) {
+  return Object.assingn(objA, objB)
 }
 
-const mergedObj = merge({name: 'Max'}, {age: 30});
+const mergedObj = merge({ name: 'Max' }, { age: 30 })
 ```
 
 - merge 함수는 제네릭 함수이므로 정확한 타입이 무엇이어야 하는지 상관하지 않고, 매개 변수로 전달받은 객체의 정확한 구조도 상관없음
-  - 다만 `Object.assign`에는 두 객체를 병합하는 기능을 하므ㅗ 객체(`object`)여야만 한다는 타입 제약 조건을 통해 특정 제약 조건을 설정해야 함
+  - 다만 `Object.assign`에는 두 객체를 병합하는 기능을 하므로 객체(`object`)여야만 한다는 타입 제약 조건을 통해 특정 제약 조건을 설정해야 함
   - 제네릭 타입 뒤에 `extends` 키워드를 통해 제약 조건을 설정할 수 있음
 
 ## 다른 일반 함수
