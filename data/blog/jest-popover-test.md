@@ -24,8 +24,8 @@ npx create-react-app [project-name]
    npm install eslint-plugin-testing-library eslint-plugin-jest-dom
    ```
 
-- testing-library
-- jest-dom
+   - testing-library
+   - jest-dom
 
 2. `package.json` 내 `eslintConfig` 제거
 3. `.eslintrc.json` 생성 및 규칙을 포함하는 구성 추가
@@ -52,23 +52,23 @@ npx create-react-app [project-name]
 
 5. `VSCode` 프로젝트를 위한 설정 및 구성 추가
 
-- `settings.json`
+   - `settings.json`
 
-  ```json
-  {
-    "eslint.options": {
-      "configFile": ".eslintrc.json"
-    },
-    "eslint.validate": ["javascript", "javascriptreact"],
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  }
-  ```
+     ```json
+     {
+       "eslint.options": {
+         "configFile": ".eslintrc.json"
+       },
+       "eslint.validate": ["javascript", "javascriptreact"],
+       "editor.codeActionsOnSave": {
+         "source.fixAll.eslint": true
+       },
+       "editor.defaultFormatter": "esbenp.prettier-vscode",
+       "editor.formatOnSave": true
+     }
+     ```
 
-  - ESLint 설정 파일 지정 및 저장 시 ESLint 교정 행위, 포맷팅 설정
+     - ESLint 설정 파일 지정 및 저장 시 ESLint 교정 행위, 포맷팅 설정
 
 ## 코드 구성과 SummaryForm 소개
 
@@ -290,25 +290,25 @@ test('팝오버가 hover 이벤트에 반응해야 함', () => {
 
 1. 페이지가 로딩되면 팝오버는 표시되지 않음
 
-- `screen.queryByText`
-  - 페이지가 로딩된 후 팝오버는 표시되지 않아야하므로, `queryByText`로 작성
-    - `queryBy`를 사용할 시, 매칭되는 게 없으면 `null`을 반환
-- `expect(nullPopover).not.toBeInTheDocument()`
-  - 팝오버 요소가 `DOM` 존재하지 않는지를 테스트
+   - `screen.queryByText`
+     - 페이지가 로딩된 후 팝오버는 표시되지 않아야하므로, `queryByText`로 작성
+       - `queryBy`를 사용할 시, 매칭되는 게 없으면 `null`을 반환
+   - `expect(nullPopover).not.toBeInTheDocument()`
+     - 팝오버 요소가 `DOM` 존재하지 않는지를 테스트
 
 2. 체크박스 라벨로 마우스를 올리면 팝오버는 표시됨
 
-- `userEvent.hover(termsAndConditions)`
-  - 마우스오버를 시뮬레이션하기 위해 `termsAndConditions` 요소를 `userEvent`를 사용해 hover 상호 작용
-- `expect(popover).toBeInTheDocument()`
-  - `hover` 했을 때, 해당 요소가 `DOM`에 존재하는지 테스트
+   - `userEvent.hover(termsAndConditions)`
+     - 마우스오버를 시뮬레이션하기 위해 `termsAndConditions` 요소를 `userEvent`를 사용해 hover 상호 작용
+   - `expect(popover).toBeInTheDocument()`
+     - `hover` 했을 때, 해당 요소가 `DOM`에 존재하는지 테스트
 
 3. 체크박스 라벨에서 마우스가 벗어나면 팝오버는 사라짐
 
-- `userEvent.unhover(termsAndConditions)`
-  - 마우스오버가 비활성화 상태 즉, 마우스가 해당 요소르 벗어났을 때의 상호 작용을 정의
-- `expect(nullPopoverAgain).not.toBeInTheDocument()`
-  - 팝오버 요소가 `DOM` 존재하지 않는지를 테스트
+   - `userEvent.unhover(termsAndConditions)`
+     - 마우스오버가 비활성화 상태 즉, 마우스가 해당 요소르 벗어났을 때의 상호 작용을 정의
+   - `expect(nullPopoverAgain).not.toBeInTheDocument()`
+     - 팝오버 요소가 `DOM` 존재하지 않는지를 테스트
 
 ## 팝 오버 요소 구성
 
