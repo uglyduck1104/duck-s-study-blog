@@ -1,5 +1,5 @@
 ---
-title: 타입스크립트의 타입 시스템 - Item 21 ~ 23
+title: 타입 추론 - Item 21 ~ 23
 date: '2022-10-11'
 tags: ['typescript']
 draft: false
@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# 타입스크립트의 타입 시스템 - Item 21 ~ 23
+# 타입 추론 - Item 21 ~ 23
 
 ## Item 21) 타입 넓히기
 

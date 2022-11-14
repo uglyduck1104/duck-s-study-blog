@@ -1,5 +1,5 @@
 ---
-title: 타입스크립트의 타입 시스템 - Item 27 ~ 29
+title: 타입 설계 - Item 27 ~ 29
 date: '2022-10-31'
 tags: ['typescript']
 draft: false
@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# 타입스크립트의 타입 시스템 - Item 27 ~ 29
+# 타입 설계 - Item 27 ~ 29
 
 ## Item 27) 함수형 기법과 라이브러리로 타입 흐름 유지하기
 

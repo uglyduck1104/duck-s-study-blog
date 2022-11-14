@@ -49,7 +49,7 @@ const people = ['alice', 'bob', 'jan'].map(name => ({name});
     ```tsx
     const people = ['alice', 'bob', 'jan'].map(name => {
       const person: Person = {name};
-      reutrn person
+      return person
     }); // 타입은 Person[]
     ```
 

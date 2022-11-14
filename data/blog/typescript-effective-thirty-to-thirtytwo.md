@@ -1,5 +1,5 @@
 ---
-title: 타입스크립트의 타입 시스템 - Item 30 ~ 32
+title: 타입 설계 - Item 30 ~ 32
 date: '2022-11-10'
 tags: ['typescript']
 draft: false
@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# 타입스크립트의 타입 시스템 - Item 30 ~ 32
+# 타입 설계 - Item 30 ~ 32
 
 ## Item 30) 문서에 타입 정보를 쓰지 않기
 
