@@ -266,7 +266,7 @@ console.log(uniq([2, 1, 2, 3, 4, 3, 4])); // [2, 1, 3, 4]
       // this가 subset의 상위 집합인지 확인
       Set.prototype.isSuperset = function (subset){
         const supersetArr = [...this];
-        reutrn [...subset].every(v => supersetArr.includes(v));
+        return [...subset].every(v => supersetArr.includes(v));
       };
       
       const setA = new Set([1, 2, 3, 4]);

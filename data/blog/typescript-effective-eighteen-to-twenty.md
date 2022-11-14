@@ -1,5 +1,5 @@
 ---
-title: 타입스크립트의 타입 시스템 - Item 18 ~ 20
+title: 타입 추론 - Item 18 ~ 20
 date: '2022-09-25'
 tags: ['typescript']
 draft: false
@@ -8,7 +8,7 @@ layout: PostSimple
 authors: ['default']
 ---
 
-# 타입스크립트의 타입 시스템 - Item 18 ~ 20
+# 타입 추론 - Item 18 ~ 20
 
 ## Item 18) 매핑된 타입을 사용하여 값을 동기화하기
 

@@ -53,7 +53,7 @@ authors: ['default']
 ```javascript
 // 함수 선언문
 function add(x, y) {
-  reutrn
+  return
   x + y;
 }
 
@@ -210,7 +210,7 @@ console.log(add(2, 5)) // 7
 var res = (function () {
   var a = 3;
   var b = 5;
-  reutrn
+  return
   a + b;
 }());
 
